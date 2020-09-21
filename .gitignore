@@ -1,0 +1,9 @@
+# Configs
+/config.ini
+
+# Logs
+/checker.log
+
+# Environments
+venv
+.venv
