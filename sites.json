@@ -1,0 +1,37 @@
+[
+  {
+    "site": "Bestbuy",
+    "url": "https://www.bestbuy.com/site/nvidia-geforce-rtx-3080-10gb-gddr6x-pci-express-4-0-graphics-card-titanium-and-black/6429440.p?skuId=6429440",
+    "name": "Bestbuy 3080 FE",
+    "match term": "/~assets/bby/_img/int/plsvgdef-frontend/svg/cart.svg#cart",
+    "enabled": true
+  },
+  {
+    "site": "Nvidia",
+    "url": "https://www.nvidia.com/en-us/geforce/graphics-cards/30-series/rtx-3080",
+    "name": "Nvidia 3080 FE",
+    "match term": null,
+    "enabled": true
+  },
+  {
+    "site": "API",
+    "url": "https://api-prod.nvidia.com/direct-sales-shop/DR/products/en_us/USD/5438481700",
+    "name": "Nvidia 3080 FE",
+    "match term": null,
+    "enabled": true
+  },
+  {
+    "site": "Newegg",
+    "url": "https://www.newegg.com/asus-geforce-rtx-3080-tuf-rtx3080-10g-gaming/p/N82E16814126453?Description=rtx%203080&cm_re=rtx_3080-_-14-126-453-_-Product",
+    "name": "Newegg 3080 TUF",
+    "match term": "Add to cart",
+    "enabled": true
+  },
+  {
+    "site": "Bestbuy",
+    "url": "https://www.bestbuy.com/site/apple-homepod-space-gray/5902410.p?skuId=5902410",
+    "name": "Bestbuy Test",
+    "match term": "/~assets/bby/_img/int/plsvgdef-frontend/svg/cart.svg#cart",
+    "enabled": true
+  }
+]
