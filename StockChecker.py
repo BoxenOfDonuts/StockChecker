@@ -8,6 +8,7 @@ import json
 
 config = configparser.ConfigParser(interpolation=None)
 configfile = os.path.join(os.path.dirname(__file__), 'config.ini')
+jsonfile = os.path.join(os.path.dirname(__file__), 'sites.json')
 
 if not os.path.exists(configfile):
     logger.info('os path doesn\'t work, trying local')
@@ -17,11 +18,14 @@ if not os.path.exists(configfile):
         configfile = 'config.ini'
     else:
         logger.error('config file not found!')
+else:
+    config.read(configfile)
 
-config.read(configfile)
-
-with open('sites.json', 'r') as f:
-    sites = json.load(f)
+if not os.path.exists(jsonfile):
+    logger.error('no sites.json file.. exiting..')
+else:
+    with open(jsonfile, 'r') as f:
+        sites = json.load(f)
 
 class GettingStuff(object):
     inStockMessage = 'GPU In Stock at {}!'
