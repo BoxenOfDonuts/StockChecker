@@ -134,8 +134,12 @@ def telegram_send(message):
 
 def main():
     gpuList = []
+    logger.info('Starting!')
     for site in sites:
-        gpuList.append(GraphicsCard(site['url'], site['site'], site['name'], site['match term']))
+        if site['enabled']:
+            gpuList.append(GraphicsCard(site['url'], site['site'], site['name'], site['match term']))
+        else:
+            pass
     while True:
         for gpu in gpuList:
             if gpu.site == 'API':
