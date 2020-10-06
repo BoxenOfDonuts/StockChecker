@@ -22,7 +22,7 @@
   },
   {
     "site": "Newegg",
-    "url": "https://www.newegg.com/asus-geforce-rtx-3080-tuf-rtx3080-10g-gaming/p/N82E16814126453?Description=rtx%203080&cm_re=rtx_3080-_-14-126-453-_-Product",
+    "url": "https://www.newegg.com/asus-geforce-rtx-3080-tuf-rtx3080-10g-gaming/p/N82E16814126453?Item=N82E16814126453&Tpk=N82E16814126453",
     "name": "Newegg 3080 TUF",
     "match term": "Add to cart",
     "enabled": true
