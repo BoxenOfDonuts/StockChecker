@@ -13,8 +13,8 @@ class UUIDFilter(logging.Filter):
         return True
 
 
-#LOGFILE = '/mnt/price_check/stock_checker.log'
-LOGFILE = 'checker.log'
+LOGFILE = '/mnt/price_check/stock_checker.log'
+#LOGFILE = 'checker.log'
 logHandler = logging.FileHandler(filename=LOGFILE)
 formatter = jsonlogger.JsonFormatter('%(asctime)s %(runID)s %(app)s %(message)s')
 logHandler.setFormatter(formatter)
